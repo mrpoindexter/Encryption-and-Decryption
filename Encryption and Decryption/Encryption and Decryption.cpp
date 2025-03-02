@@ -191,9 +191,9 @@ void MAIN()
 	int type;
 	int shift;
 
+	cout << "Welcome to the encryption and decryption station" << endl << endl;
 
 	do {
-		cout << "Welcome to the encryption and decryption station" << endl;
 		cout << "Press 1: caesar cipher 2: vigenere cipher 3: Exit" << endl;
 		cin >> type;
 		cout << endl;
