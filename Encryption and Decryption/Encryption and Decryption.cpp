@@ -194,15 +194,29 @@ void MAIN()
 
 	do {
 		cout << "Welcome to the encryption and decryption station" << endl;
-		cout << "Press 1: caesar cipher 2: vigenere cipher " << endl;
+		cout << "Press 1: caesar cipher 2: vigenere cipher 3: Exit" << endl;
 		cin >> type;
 		cout << endl;
+
+		while (type < 1 || type > 3)
+		{
+			cout << "Please enter within 1 and 3: ";
+			cin >> type;
+			cout << endl;
+		}
 
 		switch (type)
 		{
 			case 1:
 				cout << "Enter 1: Encryption 2: Decryption 3: Exit" << endl;
 				cin >> option;
+
+				while (option < 1 || option > 3)
+				{
+					cout << "Please enter within 1 and 3: ";
+					cin >> option;
+					cout << endl;
+				}
 
 				switch (option)
 				{
@@ -235,6 +249,13 @@ void MAIN()
 				cout << "Enter 1: Encryption 2: Decryption 3: Exit" << endl;
 				cin >> option;
 
+				while (option < 1 || option > 3)
+				{
+					cout << "Please enter within 1 and 3: ";
+					cin >> option;
+					cout << endl;
+				}
+
 				switch (option)
 				{
 				case 1:
@@ -259,6 +280,10 @@ void MAIN()
 					break;
 				}
 
+				break;
+
+			case 3:
+				x = "n";
 				break;
 		}
 
